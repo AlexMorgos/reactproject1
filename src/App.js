@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Joke from "./Joke"
+import { directive } from '@babel/types';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Joke punchLine="text text text"/> 
+      <Joke question="text text text" punchLine="text"/>
+      <Joke question="text text" punchLine="text text"/>
+      <Joke question="text text text text" punchLine="text text"/>
+      <Joke question="text text" punchLine="text"/>
+      <Joke question="text text text text text" punchLine="text text text"/>
     </div>
-  );
+  )
 }
 
 export default App;
